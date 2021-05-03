@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>CodeDrome</title>
+    <meta charset="utf-8" />
+    <link href="projects.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div class="maindiv">
+		<div class="banner"></div>
+		<div class="linkpanel"><a href="http://www.codedrome.com" target="_blank">codedrome.com</a></div>
+		<div class="contentdiv" id="maindiv">
+
+    	<!-- CONTROLS -->
+        <div class="roundcorners" style="position: absolute; width: 312px; left:8px; top:8px; bottom: 8px; overflow: auto; padding:8px;">
+            <table style="width:100%;">
+                <tr>
+                    <td><div class="label">Number of Characters</div></td>
+                    <td><input type="number" min="1" max="32" id="udNumberOfCharacters" style="margin:4px; width:64px" value="12" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Value</div></td>
+                    <td><input type="text" step="any" id="txtText" style="margin:4px; width:96px" value="AaBbCc123456" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: LCD</div></td>
+                    <td><input type="radio" value="LCD" name="rdoColorScheme" id="rdoColorSchemeLCD" checked style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Green</div></td>
+                    <td><input type="radio" value="Green" name="rdoColorScheme" id="rdoColorSchemeGreen" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Orange</div></td>
+                    <td><input type="radio" value="Orange" name="rdoColorScheme" id="rdoColorSchemeOrange" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Blue</div></td>
+                    <td><input type="radio" value="Blue" name="rdoColorScheme" id="rdoColorSchemeBlue" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Sky</div></td>
+                    <td><input type="radio" value="Sky" name="rdoColorScheme" id="rdoColorSchemeSky" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Color Scheme: Red</div></td>
+                    <td><input type="radio" value="Red" name="rdoColorScheme" id="rdoColorSchemeRed" style="margin:4px; width:64px" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Background Color</div></td>
+                    <td><input type="color" id="colBackgroundColor" style="margin:4px; width:96px" value="#E0E0E0" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">Lit Segment Color</div></td>
+                    <td><input type="color" id="colLitSegmentColor" style="margin:4px; width:96px" value="#202020" /></td>
+                </tr>
+                <tr>
+                    <td><div class="label">UnlitSegmentColor</div></td>
+                    <td><input type="color" id="colUnlitSegmentColor" style="margin:4px; width:96px" value="#D0D0D0" /></td>
+                </tr>
+            </table>
+        </div>
+
+    	<!-- SVG -->
+    	<div class="roundcorners" style="position: absolute; left: 348px; top: 8px; right: 8px; bottom: 8px; overflow:auto;">
+
+        	<svg id="SVGMSD"
+             	style="position: absolute; border: 0px solid #000000; left: 8px; top:8px;" height="200" width="422"	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        	</svg>
+
+    	</div>
+
+		</div>
+
+	</div>
+
+<script src="multi_segment_display.js"></script>
+<script src="multi_segment_display_page.js"></script>
+
+</body>
